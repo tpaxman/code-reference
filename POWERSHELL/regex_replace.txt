@@ -1,0 +1,4 @@
+
+Regex Replace
+  dir | Rename-item -whatif -Newname {$_.name -replace '[regex string]', '[replace]'}
+  dir | Rename-item -Newname {$_.name -replace '[regex string]', '[replace]'}
