@@ -1,0 +1,8 @@
+DELETE A MERGED BRANCH LOCALLY AND REMOTELY:
+
+git branch -d branchname
+git push -d origin branchname
+
+THEN PULLING ELSEWHERE:
+
+git fetch --prune  (or git fetch -p)
