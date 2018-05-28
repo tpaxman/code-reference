@@ -72,3 +72,13 @@
 
 %% Add units to table
 	T.Properties.VariableUnits = {‘mm’ ‘s’ ‘kg’};
+  
+%% Unique vs. FindGroups
+% Take a criteria table
+y = DataTable(:, groupingVars);
+
+[uniqueTable, ~,ii] = unique(y);
+[ii, uniqueTable]  = findgroups(y);    % these two functions give the same results
+
+  
+  
