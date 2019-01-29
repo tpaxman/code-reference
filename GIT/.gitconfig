@@ -1,13 +1,34 @@
-Ideal `.gitconfig`
-==================
-```
 ## Nice log output:
 [log]
 date = relative
 [format]
-pretty = format:%C(auto,yellow bold)%h%C(auto, white)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(9,trunc)%aN%C(auto,white) %s% C(auto,red reverse)%gD%D   
+pretty = format:%C(auto,yellow bold)%h%C(auto, white)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(9,trunc)%aN%C(auto,white)%<(50,trunc) %s% C(auto,red reverse)%gD%D   
 # (Source: https://stackoverflow.com/questions/1441010/the-shortest-possible-output-from-git-log-containing-author-and-date)
 
+## Status
+[color "status"]
+	header = normal
+	added = green bold
+	updated = red bold
+	changed = red bold reverse
+	untracked = red bold
+	nobranch = red
+
+[color "branch"]
+	current = yellow bold reverse
+	local = yellow bold
+	remote = red bold
+	plain = normal
+	
+[color "diff"]
+	plain = blue bold
+	meta = white bold
+	frag = cyan bold
+	old = red bold
+	new = green bold
+	commit = yellow
+	whitespace = normal red
+	
 ## Aliases:
 [alias]
 # logs
@@ -49,4 +70,3 @@ b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectna
 
 # list aliases
 la = "!git config -l | grep alias | cut -c 7-"
-```
