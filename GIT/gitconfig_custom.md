@@ -1,16 +1,14 @@
-`gitconfig`
-===========
+Ideal `.gitconfig`
+==================
 ```
+## Nice log output:
 [log]
-  date = relative
-
+date = relative
 [format]
-  #pretty = format:%h %Cblue%ad%Creset %ae %Cgreen%s%Creset
-  #pretty = format:%C(auto,yellow)%h%C(auto,magenta)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(7,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D
-   pretty = format:%C(auto,yellow bold)%h%C(auto, white)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(9,trunc)%aN%C(auto,white) %s% C(auto,red reverse)%gD%D
-   
-   #(Source: https://stackoverflow.com/questions/1441010/the-shortest-possible-output-from-git-log-containing-author-and-date)
+pretty = format:%C(auto,yellow bold)%h%C(auto, white)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(9,trunc)%aN%C(auto,white) %s% C(auto,red reverse)%gD%D   
+# (Source: https://stackoverflow.com/questions/1441010/the-shortest-possible-output-from-git-log-containing-author-and-date)
 
+## Aliases:
 [alias]
 # logs
 #l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
