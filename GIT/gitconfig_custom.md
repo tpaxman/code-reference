@@ -1,6 +1,18 @@
+Ideal `.gitconfig`
+==================
+```
+## Nice log output:
+[log]
+date = relative
+[format]
+pretty = format:%C(auto,yellow bold)%h%C(auto, white)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(9,trunc)%aN%C(auto,white) %s% C(auto,red reverse)%gD%D   
+# (Source: https://stackoverflow.com/questions/1441010/the-shortest-possible-output-from-git-log-containing-author-and-date)
+
+## Aliases:
 [alias]
 # logs
-l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+#l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+l = log
 lg = log --graph --oneline --decorate --all
 
 a = add
@@ -37,3 +49,4 @@ b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectna
 
 # list aliases
 la = "!git config -l | grep alias | cut -c 7-"
+```
