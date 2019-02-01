@@ -21,8 +21,8 @@ pretty = format:%C(auto,yellow bold)%h%C(auto, white)% G? %C(auto,blue)%>(12,tru
 	plain = normal
 	
 [color "diff"]
-	plain = blue bold
-	meta = white bold
+	plain = white bold
+	meta = cyan bold
 	frag = cyan bold
 	old = red bold
 	new = green bold
@@ -34,7 +34,7 @@ pretty = format:%C(auto,yellow bold)%h%C(auto, white)% G? %C(auto,blue)%>(12,tru
 # logs
 #l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
 l = log
-lg = log --graph --oneline --decorate --all
+lg = l --graph
 
 a = add
 ap = add -p
