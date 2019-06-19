@@ -8,10 +8,9 @@ pretty = format:%C(auto,yellow bold)%h%C(auto, white)% G? %C(auto,blue)%>(12,tru
 ## Status
 [color "status"]
 	header = normal
-	added = green bold
-	updated = red bold
+	added = green bold reverse
 	changed = red bold reverse
-	untracked = red bold
+	untracked = red
 	nobranch = red
 
 [color "branch"]
