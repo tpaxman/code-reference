@@ -27,6 +27,7 @@ h: display help
 
 (https://stackoverflow.com/questions/32469204/scrolling-down-git-diff-from-mac-terminal)
 
+
 Ambigous argument: both revision and filename:
 ==============================================
 
@@ -35,6 +36,15 @@ git diff ambiguous_name --
 
 ## Treat as a file name:
 git diff -- ambiguous_name
+
+
+Examine differences in words
+============================
+# For CSVs:
+git diff --word-diff-regex="[^[:space:],]+"
+
+
+(https://stackoverflow.com/questions/10482773/also-use-comma-as-a-word-separator-in-diff)
 
 
 (https://git-scm.com/docs/git-diff)
