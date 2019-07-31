@@ -54,8 +54,6 @@ $ git reset HEAD .
 ```
 https://clubmate.fi/git-removing-files-from-the-staging-area-and-the-tree/
 
-
-
 # Diffs
 
 ## general reference
@@ -87,6 +85,15 @@ G: jump to last line
 h: display help
 ```
 (https://stackoverflow.com/questions/32469204/scrolling-down-git-diff-from-mac-terminal)
+
+# Find files
+
+## find when file got deleted
+```
+git log --all --full-history -- <path-to-file>
+```
+https://stackoverflow.com/questions/7203515/git-how-to-find-a-deleted-file-in-the-project-commit-history
+
 
 
 ## ambiguous argument: both revision and filename:
