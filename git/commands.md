@@ -88,6 +88,11 @@ h: display help
 
 # Find files
 
+## look at file in an old commit
+```
+git show <commit>:path/to/file
+```
+
 ## find when file got deleted
 ```
 git log --all --full-history -- <path-to-file>
