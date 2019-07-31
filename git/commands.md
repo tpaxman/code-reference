@@ -35,6 +35,14 @@ git rm -r --cached <folder>
 ```
 (https://stackoverflow.com/questions/1274057/how-to-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitignore)
 
+# Add
+
+## add only modified files
+```
+git add -u (is equivalent to git add --update)
+```
+https://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add
+
 # Commits
 
 ## unstage files
