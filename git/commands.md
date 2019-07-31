@@ -37,7 +37,7 @@ git rm -r --cached <folder>
 
 # Commits
 
-## Unstage files
+## unstage files
 ```
 # unstage one file
 $ git reset HEAD file
@@ -50,10 +50,10 @@ https://clubmate.fi/git-removing-files-from-the-staging-area-and-the-tree/
 
 # Diffs
 
-## General reference
+## general reference
 https://git-scm.com/docs/git-diff
 
-## Differences between branches
+## diff between branches
 ```
 # Two branches, same file:
 git diff branchA branchB -- file.py
@@ -71,7 +71,7 @@ git diff --compact-summary branchB -- folder
 (https://stackoverflow.com/questions/38664421/how-do-i-call-git-diff-on-the-same-file-between-2-different-local-branches/)
 
 
-## Navigate long file diffs:
+## navigate long diffs:
 ```
 u: go up half page
 d: go down half page
@@ -81,7 +81,7 @@ h: display help
 (https://stackoverflow.com/questions/32469204/scrolling-down-git-diff-from-mac-terminal)
 
 
-## Ambigous argument: both revision and filename:
+## ambiguous argument: both revision and filename:
 ```
 # Treat as a branch name:
 git diff ambiguous_name --
@@ -90,7 +90,7 @@ git diff ambiguous_name --
 git diff -- ambiguous_name
 ```
 
-## Examine differences in words
+## examine differences in words
 ```
 # For CSVs:
 git diff --word-diff-regex="[^[:space:],]+"
