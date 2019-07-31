@@ -88,3 +88,12 @@ mask = T.fluidFlag==2
 T.loc[mask, 'Qstp'] = T.loc[mask, 'Qstp'].map(correctorfunction)      # YES, GOOD
 T[mask, 'Qstp'] = T[mask, 'Qstp'].map(correctorfunction)              #NO, DOESNT WORK
 ```
+
+# Merging
+
+## merge on range
+```
+s = pd.IntervalIndex.from_arrays(dfb.lowerbound_ip_address, dfb.upperbound_ip_address, 'both')
+dfa.assign(country=dfb.set_index(s).loc[dfa.ip_address].country.values)
+```
+https://stackoverflow.com/questions/46179362/fastest-way-to-merge-pandas-dataframe-on-ranges
